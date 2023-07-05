@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding:0;
+  margin:0;
+  background-color: #fcf8e8;
+}
+
+.App{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction:column;
+  width:100%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+}
+
+.gallery img{
+  width:20%;
+  margin:10px;
+  border-radius: 10px;
+  object-fit: fill;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border:solid 2px #678d74;
+}
+
+form{
+  width: 100%;
+  padding:1rem 3rem;
+  background-color: #678d74;
+  display: flex;
+  justify-content: center;
+}
+
+form input[type="file"]{
+  color:transparent
+}
+
+
+
+
+
+
+
