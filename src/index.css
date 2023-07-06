@@ -1,5 +1,8 @@
 *{
   box-sizing: border-box;
+  outline:none;
+  border:none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body{
@@ -14,6 +17,17 @@ body{
   align-items: center;
   flex-direction:column;
   width:100%;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  background-color: #678d74;
+  color:#fcf8e8;
+  width:100%;
+  padding: 1rem;
 }
 
 .gallery {
@@ -35,14 +49,95 @@ body{
 form{
   width: 100%;
   padding:1rem 3rem;
-  background-color: #678d74;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap:10px;
 }
 
-form input[type="file"]{
-  color:transparent
+form input{
+  padding:10px;
+  border-radius: 10px;
+  font-size: 20px;
+  display: flex;
 }
+
+form button{
+  width:100px;
+  background-color: green;
+  color:white;
+  padding:5px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:1366px){
+  .gallery{
+    width:100%;
+  }
+
+  .gallery img{
+    width:18%;
+    display:flex;
+  }
+}
+
+@media  screen and (max-width:800px) {
+  .gallery img{
+    width:30%;
+  }
+
+  .header{
+    font-size: 45px;
+  }
+
+  form input{
+    font-size: 18px;
+  }
+
+  form button{
+    font-size: 18px;
+  }
+
+  form{
+    padding: 10px;
+  }
+}
+
+
+@media screen and (max-width:550px){
+  
+  .gallery{
+    padding:10px;
+  }
+  .gallery img{
+    width:100%;
+  
+  }
+
+  form{
+    padding:5px;
+  }
+
+  form input{
+    font-size: 15px;
+    padding:3px;
+  }
+
+  form button{
+    font-size: 15px;
+
+  }
+
+  .header{
+    font-size: 30px;
+  }
+}
+
+
 
 
 

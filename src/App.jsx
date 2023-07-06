@@ -26,9 +26,10 @@ function App() {
 
   return (
     <div className="App">
+      <div className="header">GALLERY</div>
       <form onSubmit={handleOnSubmit}>
         <input type="file" accept="image/*" multiple name="imageInput" required title='IMAGE'/>
-        <input type="submit" value="UPLOAD" />
+        <button type="submit">UPLOAD</button>
       </form>
 
       <div className="gallery">
